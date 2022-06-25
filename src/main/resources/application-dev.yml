@@ -1,0 +1,30 @@
+server:
+  port: 8080
+#  servlet:
+#    context-path:
+
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://127.0.0.1:1434;database=ChinaCiticBankCreditRiskIntelligenceSystem;encrypt=false;sslProtocol=TLSv1.2;
+    username: sa
+    password: Ab12345$
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      pool-name: hikariCP
+      maximum-pool-size: 10
+      connection-timeout: 30000
+
+# 全局定时任务开关
+scheduling:
+  enabled: true
+#  Aop日志开关
+security-log-aspect:
+  enable: true
+
+logging:
+  level:
+    root: info
+    cn.com.taiji.supervision.caselibrary.mapper: debug
+  file:
+    name: logs/credit-risk-system.log

@@ -22,6 +22,7 @@ scheduling:
 security-log-aspect:
   enable: true
 
+
 logging:
   level:
     root: info

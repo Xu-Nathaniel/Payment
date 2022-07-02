@@ -25,6 +25,6 @@ security-log-aspect:
 logging:
   level:
     root: info
-    cn.com.taiji.supervision.caselibrary.mapper: debug
+    com.wechat.payment.mapper: debug
   file:
-    name: logs/credit-risk-system.log
+    name: logs/wechat-payment.log
